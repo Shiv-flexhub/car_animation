@@ -1,0 +1,137 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    overflow: hidden;
+    animation: shake linear 3s infinite;
+}
+.sky{
+    height: 100vh;
+    width: 100%;
+    background-image: url(background.jpg);
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+.trees{
+    width: 100%;
+    height: 100vh;
+    background-image: url(trees.png);
+    background-size: cover;
+    position: absolute;
+    top: -87px;
+}
+
+.track{
+    width: 800vw;
+    height:48vh;
+    background-image: url(track.png);
+    /* background-size: cover; */
+    position: absolute;
+    top: 74vh;
+    background-repeat: repeat-x;
+    animation: trackmovement linear 8s infinite;
+}
+.car{
+    height: 78px;
+    width: 310px;
+    background-image: url(car_body.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom:13vh;
+    left: 14vw;
+    animation: shake linear 1.9s infinite;
+}
+
+.wheel1 img{
+    width: 55px;
+    animation: wheelrotation linear .4s infinite;
+    height: 60px;
+    position: relative;
+    top: 33px;
+    left: 39px;
+    
+}
+.wheel2 img{
+    animation: wheelrotation linear .4s infinite;
+    width: 58px;
+    height: 60px;
+    position: relative;
+    left: 62.5%;
+    bottom: 30px;
+
+}
+
+@keyframes wheelrotation
+{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes trackmovement
+{
+    100%{
+        transform:translateX(-500vw);
+    }
+}
+@keyframes shake
+{
+    0%{
+        transform:translateY(-5px);
+    }
+    50%{
+        transform:translateY(5px);
+    }
+    100%{
+        transform:translateY(-5px);
+    }
+}
+@keyframes shake
+{
+    0%{
+        transform:translateY(-5px);
+    }
+    50%{
+        transform:translateY(5px);
+    }
+    100%{
+        transform:translateY(-5px);
+    }
+}
+@keyframes bodyshake
+{
+    0%{
+        transform:translateY(-15px);
+    }
+    50%{
+        transform:translateY(15px);
+    }
+    100%{
+        transform:translateY(-15px);
+    }
+}
+
+audio{
+    position: absolute;
+    top: 22vh;
+    left: 75vw;
+    width: 23vw;
+    height: 11vh;
+}
+.quote{
+    position: absolute;
+    top: 12vh;
+    left: 21vw;
+    font-size: 22px;
+    font-family: 'Oswald', sans-serif;
+}
+
+footer{
+    position: absolute;
+    top: 67vh;
+    left: 71vw;
+    font-size: 22px;
+    font-family: 'Oswald', sans-serif;
+}
